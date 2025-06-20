@@ -1,0 +1,9 @@
+aiofiles
+aiosmtplib
+croniter
+httpx[http2]
+jinja2
+python-dotenv
+PyYAML
+pandas
+numpy

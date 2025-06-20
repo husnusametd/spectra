@@ -1,0 +1,19 @@
+coingecko:
+  params:
+    order: market_cap_desc
+    per_page: 250
+    price_change_percentage: 24h
+    vs_currency: usd
+  url: https://api.coingecko.com/api/v3/coins/markets
+logging:
+  path: logs/app.log
+  retention_days: 7
+smtp:
+  from_addr: signals@yourdesk.com
+  host: smtp.gmail.com
+  password: ybgfuwikbvpvaqql
+  port: 587
+  to_addr: desk@yourdesk.com
+  user: samblacksmith7@gmail.com
+thresholds:
+  ob_imbalance_usd: 250_000

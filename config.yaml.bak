@@ -1,0 +1,18 @@
+# SMTP ayarları .env üzerinden alınır, CoinGecko parametreleri sabit.
+smtp:
+  host: ${SMTP_HOST}
+  port: ${SMTP_PORT}
+  user: ${SMTP_USER}
+  password: ${SMTP_PASS}
+  from_addr: "signals@yourdesk.com"
+  to_addr:   "desk@yourdesk.com"
+logging:
+  path: logs/app.log
+  retention_days: 7
+coingecko:
+  url: "https://api.coingecko.com/api/v3/coins/markets"
+  params:
+    vs_currency: "usd"
+    order: "market_cap_desc"
+    per_page: 250
+    price_change_percentage: "24h"
